@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "simple-save-to-notion",
+  "description": "Save any web page to Notion with one click",
+  "version": "1.4.0",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["tabs", "storage", "scripting", "activeTab"],
+  "host_permissions": [
+    "*://api.notion.com/*",
+    "*://www.notion.so/*",
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

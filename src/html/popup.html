@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>arXiv to Notion</title>
+  </head>
+  <body>
+    <div class="uk-container">
+      <div class="uk-card uk-card-default uk-card-body uk-width-1-1 uk-box-shadow-small">
+        <div class="uk-margin-bottom uk-text-center">
+          <div class="uk-button-group">
+            <button
+              id="js-save"
+              class="uk-button uk-button-primary uk-margin-small-right"
+            >
+              <span id="js-save-text">Save to Notion</span>
+              <span id="js-save-spinner" uk-spinner="ratio: 0.8" style="display: none;"></span>
+            </button>
+            <button
+              id="js-view"
+              class="uk-button uk-button-secondary"
+              style="display: none;"
+            >
+              <span id="js-view-text">View in Notion</span>
+              <span id="js-view-spinner" uk-spinner="ratio: 0.8" style="display: none;"></span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="uk-margin">
+          <label class="uk-form-label" for="js-title">
+            <span uk-icon="file-text" class="uk-margin-small-right"></span>Title
+          </label>
+          <div class="uk-form-controls">
+            <textarea
+              id="js-title"
+              class="uk-textarea uk-border-rounded"
+              rows="2"
+              placeholder="Title"
+            ></textarea>
+          </div>
+        </div>
+        
+        <div class="uk-margin">
+          <label class="uk-form-label" for="js-abst">
+            <span uk-icon="file-edit" class="uk-margin-small-right"></span>Description
+          </label>
+          <div class="uk-form-controls">
+            <textarea
+              id="js-abst"
+              class="uk-textarea uk-border-rounded"
+              rows="4"
+              placeholder="Description"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      
+      <div class="uk-margin">
+        <div id="js-message-container"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>arXiv to Notion - Settings</title>
+  </head>
+  <body>
+    <div class="uk-container">
+      <div class="uk-card uk-card-default uk-card-body uk-margin-medium-bottom uk-box-shadow-small">
+        <h3 class="uk-card-title uk-margin-remove-bottom">
+          <span uk-icon="link" class="uk-margin-small-right"></span>
+          Notion Integration
+        </h3>
+        <p class="uk-text-meta uk-margin-small-top uk-margin-medium-bottom">
+          Connect your Notion account to enable.
+        </p>
+        
+        <div class="uk-margin-medium-bottom">
+          <label class="uk-form-label" for="js-token-input">
+            <span uk-icon="lock" class="uk-margin-small-right"></span>
+            Notion Integration ID
+          </label>
+          <div class="uk-form-controls">
+            <div class="uk-inline uk-width-1-1">
+              <button
+                id="js-visible-btn"
+                class="uk-form-icon uk-form-icon-flip"
+                uk-icon="lock"
+              ></button>
+              <input
+                id="js-token-input"
+                class="uk-input uk-border-rounded"
+                type="password"
+                placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+              />
+            </div>
+            <div class="uk-flex uk-flex-between uk-margin-small-top">
+              <a
+                class="uk-link-text uk-flex uk-flex-middle"
+                target="_blank"
+                href="https://www.notion.so/profile/integrations/"
+                uk-tooltip="title: Get integration ID; pos: bottom"
+              >
+                <span uk-icon="info" class="uk-margin-small-right"></span>
+                Get Integration ID
+              </a>
+              <button
+                id="js-save-btn"
+                class="uk-button uk-button-primary uk-button-small"
+              >
+                <span uk-icon="check" class="uk-margin-small-right"></span>
+                Save Integration ID
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="uk-margin-medium-bottom">
+          <label class="uk-form-label" for="js-database-input">
+            <span uk-icon="database" class="uk-margin-small-right"></span>
+            Notion Database ID
+          </label>
+          <div class="uk-form-controls">
+            <div class="uk-inline uk-width-1-1">
+              <input
+                id="js-database-input"
+                class="uk-input uk-border-rounded"
+                type="text"
+                placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+              />
+            </div>
+            <div class="uk-flex uk-flex-between uk-margin-small-top">
+              <a
+                class="uk-link-text uk-flex uk-flex-middle"
+                target="_blank"
+                href="https://www.notion.so/my-integrations"
+                uk-tooltip="title: Get database ID from your Notion database URL; pos: bottom"
+              >
+                <span uk-icon="info" class="uk-margin-small-right"></span>
+                How to find your database ID
+              </a>
+              <button
+                id="js-save-db-btn"
+                class="uk-button uk-button-primary uk-button-small"
+              >
+                <span uk-icon="check" class="uk-margin-small-right"></span>
+                Save Database ID
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="uk-card uk-card-default uk-card-body uk-margin-medium-bottom uk-box-shadow-small">
+        <h3 class="uk-card-title uk-margin-remove-bottom">
+          <span uk-icon="info" class="uk-margin-small-right"></span>
+          Connection Status
+        </h3>
+        <div id="js-message-container" class="uk-margin-small-top"></div>
+      </div>
+    </div>
+  </body>
+</html>
